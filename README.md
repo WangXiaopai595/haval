@@ -6,7 +6,9 @@
 
 # linux搭建dns
 在centos中（ubuntu自行修改脚本），使用项目中install.sh开始搭建环境。
-如果系统中存在nginx，那么自行根据以下修改nginx配置
+
+如果系统中存在nginx，那么自行根据以下修改nginx配置,如果没有，则忽略下面配置
+
 `先生成证书：openssl req -new -newkey rsa:2048 -days 365 -nodes -x509 -subj "/C=CN/ST=Beijing/L=Beijing/O=MyOrg/OU=MyUnit/CN=你的IP地址" -keyout /usr/local/nginx/cert/server.key -out /usr/local/nginx/cert/server.crt`
 
 ```
@@ -68,10 +70,12 @@ server {
 
 # 开始安装工程模式
 1. （成功率较低，不推荐）关闭车机的热点和蓝牙，准备2台手机，一台能同时连接wifi和开热点，A手机打开热点，B手机连接A手机热点，B手机在wifi中修改网络信息，把DNS改成自己DNS服务器的IP地址，车机连接B手机热点，然后打开智能手册应该就会安装工程模式了
+
 2. 笔记本修改hosts，将dzsms.gwm.com.cn指向到dns服务器（每次修改后需要重启笔记本热点，否则不生效），然后笔记本打开热点，车机连接笔记本热点，然后打开智能手册应该就会安装工程模式了
 
 # 升级车机高德
 安卓需要安装软件：在此[链接](https://www.123pan.com/s/tinSVv-smvWh.html)链接中自行下载，如果链接失效，自行网上找Termux软件安装。
+
 苹果安装软件：ISH SELL
 
 手机关闭WiFi，手机开热点，车机连接手机热点（手机连接车机wifi不行，亲测）
