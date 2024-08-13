@@ -65,6 +65,9 @@ server {
 ```
 完成配置后重启nginx即可。
 
+如果出现apk解析错误，请在[【
+★工装模式最新纯净版】](https://www.123pan.com/s/tinSVv-2aVsh.html)下载最新的apk
+
 # windows搭建
 详细的不说了，和linux类似,用虚拟机或本机都行，看个人，修改hosts、然后用虚拟机、apache、nginx或iis达成类似目的即可
 
